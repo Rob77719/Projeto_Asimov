@@ -1,25 +1,25 @@
-📚 Projeto Asimov – WebApp de Livros e Reviews
-Um projeto desenvolvido em Python que cria um webapp interativo para exibir os melhores livros e suas avaliações, utilizando dados reais de tendências e reviews de leitores.
+📚 Projeto Asimov – WebApp Interativo de Livros e Reviews
+O Projeto Asimov é um aplicativo web desenvolvido em Python com Streamlit que permite explorar os livros mais populares e suas avaliações, de forma interativa e visual. Com filtros dinâmicos e gráficos, o usuário pode analisar tendências, preços e notas dadas por leitores.
 
-🚀 Sobre o Projeto
-O Projeto Asimov foi criado como parte da conclusão do curso de Python Básico, com o objetivo de aplicar conceitos fundamentais da linguagem no desenvolvimento de uma aplicação web. A aplicação permite que o usuário:
+🚀 Objetivo
+Criar uma aplicação prática e intuitiva que:
 
-Visualize uma lista dos livros mais bem avaliados.
+Liste os livros mais bem avaliados.
 
-Leia reviews de outros leitores.
+Exiba reviews reais de leitores.
 
-Explore tendências literárias de forma simples e intuitiva.
+Permita filtrar por preço máximo.
+
+Mostre gráficos interativos sobre anos de publicação e distribuição de preços.
 
 🛠️ Tecnologias Utilizadas
 Python 3.x
 
-Flask – Framework web para Python
+Streamlit – Criação do webapp
 
-Pandas – Manipulação e análise de dados
+Pandas – Manipulação de dados
 
-HTML/CSS – Estrutura e estilo do front-end
-
-Bootstrap – Layout responsivo
+Plotly Express – Visualizações interativas
 
 CSV – Fonte de dados (Top 100 livros e reviews)
 
@@ -27,47 +27,51 @@ CSV – Fonte de dados (Top 100 livros e reviews)
 Código
 Projeto_Asimov/
 │
-├── app.py                  # Arquivo principal do Flask
-├── runner.py               # Script para iniciar a aplicação
-├── Top-100 Trending Books.csv  # Lista dos livros mais populares
-├── customer reviews.csv    # Reviews dos leitores
-└── README.md               # Documentação do projeto
+├── app.py                      # Código principal do Streamlit
+├── datasets/
+│   ├── customer reviews.csv    # Reviews dos leitores
+│   └── Top-100 Trending Books.csv  # Lista dos livros mais populares
+└── README.md                   # Documentação do projeto
 ⚙️ Como Executar
-Clone o repositório
+Clonar o repositório
 
 bash
-git clone https://github.com/SEU_USUARIO/Projeto_Asimov.git
+git clone https://github.com/Rob77719/Projeto_Asimov.git
 cd Projeto_Asimov
-Crie um ambiente virtual e instale as dependências
+Criar ambiente virtual e instalar dependências
 
 bash
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-Execute a aplicação
+Executar o Streamlit
 
 bash
-python runner.py
-Acesse no navegador
+streamlit run app.py
+Acessar no navegador
 
 Código
-http://127.0.0.1:5000
+http://localhost:8501
 📊 Funcionalidades
-Listagem dos Top 100 livros mais populares.
+Tabela de reviews com notas e comentários.
 
-Exibição de reviews reais de leitores.
+Filtro de preço via slider.
 
-Interface responsiva e amigável.
+Gráfico de barras com quantidade de livros por ano de publicação.
 
-Filtros para busca por título ou autor.
+Histograma com distribuição de preços.
 
-📌 Próximos Passos
-Adicionar sistema de login e favoritos.
+Layout responsivo com colunas lado a lado.
 
-Implementar API para buscar dados em tempo real.
+🔮 Melhorias Futuras
+Adicionar busca por título ou autor.
 
-Criar gráficos de análise de avaliações.
+Criar sistema de login e favoritos.
+
+Integrar API para dados em tempo real.
+
+Adicionar gráficos de análise de avaliações.
 
 👨‍💻 Autor
-Desenvolvido por Roberto como parte do aprendizado em Python. Inspirado na paixão por livros e tecnologia.
+Desenvolvido por Roberto como parte do aprendizado em Python, unindo tecnologia e literatura.
